@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,27 +48,27 @@ namespace LeetCodeProblems
             {
                 if (dict.ContainsKey(s[i])) continue;
                 if (Char.IsUpper(s[i]))
-                {                
-                                dict.Add(s[i], false);   
+                {
+                    dict.Add(s[i], false);
                 }
-                
-                    
-               
+
+
+
             }
             foreach (var data in dict)
             {
-                foreach(var sm in s)
+                foreach (var sm in s)
                 {
-                    if(char.ToLower(data.Key) == sm)
+                    if (char.ToLower(data.Key) == sm)
                     {
                         dict[data.Key] = true;
                     }
-                   
+
                 }
             }
             var sortedDictionary = new SortedDictionary<char, bool>(dict);
 
-            return sortedDictionary.LastOrDefault(x=>x.Value==true).Key.ToString()==null?"": sortedDictionary.LastOrDefault(x => x.Value == true).Key.ToString();
+            return sortedDictionary.LastOrDefault(x => x.Value == true).Key.ToString() == null ? "" : sortedDictionary.LastOrDefault(x => x.Value == true).Key.ToString();
 
         }
     }
