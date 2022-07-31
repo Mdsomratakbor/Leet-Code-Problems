@@ -1,4 +1,5 @@
-public class Solution {
+public class UglyNumber
+{
     public bool IsUgly(int n) {
         bool condition = true;
         if(n==0)

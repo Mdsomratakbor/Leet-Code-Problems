@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Text;
+
 public class LongestCommonPrefix
 {
-        public string LongestCommonPrefix(string[] strs)
+        public string LongestCommonPrefixSolution(string[] strs)
         {
             StringBuilder result = new StringBuilder();
             int firstStringLength = strs[0].Length;

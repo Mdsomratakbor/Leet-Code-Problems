@@ -1,5 +1,6 @@
-public class Solution {
-    public int RemoveElement(int[] nums, int val) {
+public class RemoveElement
+{
+    public int RemoveElementMethod(int[] nums, int val) {
      
         int arraySize =nums.Length; 
         if(arraySize==0)
