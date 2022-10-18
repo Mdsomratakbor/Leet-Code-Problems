@@ -6,7 +6,13 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ValidPerfectSquare data= new();
+            while (true)
+            {
+              var input =  Console.ReadLine();
+                Console.WriteLine(data.IsPerfectSquare(Convert.ToInt32(input)));
+            }
+          
         }
     }
 }

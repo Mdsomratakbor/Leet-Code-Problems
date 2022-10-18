@@ -1,4 +1,6 @@
-   public class ThirdMaximumNumber{
+using System.Linq;
+
+public class ThirdMaximumNumber{
    public int ThirdMax(int[] nums) {
           var arr =nums.Distinct().ToArray();  
       arr = arr.OrderByDescending(c => c).ToArray();
