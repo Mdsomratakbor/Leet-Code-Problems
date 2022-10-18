@@ -6,11 +6,11 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            ValidPerfectSquare data= new();
+            Sum_of_Square_Numbers data = new();
             while (true)
             {
               var input =  Console.ReadLine();
-                Console.WriteLine(data.IsPerfectSquare(Convert.ToInt32(input)));
+                Console.WriteLine(data.JudgeSquareSum(Convert.ToInt32(input)));
             }
           
         }
