@@ -6,11 +6,11 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            Power_of_xn data = new();
+            Sqrt data = new();
             while (true)
             {
               var input =  Console.ReadLine();
-                Console.WriteLine(data.MyPow(2.00000, -2));
+                Console.WriteLine(data.MySqrt(Convert.ToInt32(input)));
             }
           
         }
