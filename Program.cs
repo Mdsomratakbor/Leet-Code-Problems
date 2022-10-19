@@ -6,11 +6,11 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            Roman_to_Integer data = new();
+            Power_of_xn data = new();
             while (true)
             {
               var input =  Console.ReadLine();
-                Console.WriteLine(data.RomanToInt(input));
+                Console.WriteLine(data.MyPow(2.00000, -2));
             }
           
         }
