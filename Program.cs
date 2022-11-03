@@ -6,12 +6,11 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            RotateArray data = new();
+            Interview_problem_06 data = new();
             while (true)
             {
                 var input = Console.ReadLine().Split(' ');
-                int[] aray = {-1};
-                data.Rotate(aray, 2);
+                data.printMinimumValue(input);
             }
           
         }
