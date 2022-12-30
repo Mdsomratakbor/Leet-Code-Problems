@@ -6,11 +6,12 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            Interview_problem_06 data = new();
+            SortColor data = new();
             while (true)
             {
                 var input = Console.ReadLine().Split(' ');
-                data.printMinimumValue(input);
+                int[] array =  new int[] { 2, 0, 2, 1, 1, 0};
+                data.SortColors(array);
             }
           
         }
