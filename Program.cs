@@ -10,7 +10,7 @@ namespace LeetCodeProblems
            // while (true)
          //   {
                // var input = Console.ReadLine().Split(' ');
-                int[] array =  new int[] { 3,2,1,0,4 };
+                int[] array =  new int[] { 1,2,3 };
                 Console.WriteLine(data.CanJump(array));
            // }
           

@@ -10,22 +10,18 @@ namespace LeetCodeProblems
     {
         public bool CanJump(int[] nums)
         {
-            bool output = false;
             int length = nums.Length;
-            for(int i=0; i< length; i++)
+            int maxValue = 0;
+            int i = 0;
+            while(i< length && i<=maxValue)
             {
-                if (length == 1)
-                {
-                    output = true;
-                }
-                
-                if (nums[i]+i == length-1 || nums[i]+i>length-1)
-                {
-                    output = true; break;
-                }
+                maxValue= Math.Max(nums[i]+i, maxValue);
 
+                i++;
             }
-            return output;
+            if (i == length)
+                return true;
+            return false;
         }
     }
 }
