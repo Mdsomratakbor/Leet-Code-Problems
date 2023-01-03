@@ -6,7 +6,7 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            Permutation data = new();
+            Strong_Password_Checker_II data = new();
             // while (true)
             //   {
             // var input = Console.ReadLine().Split(' ');
@@ -22,13 +22,14 @@ namespace LeetCodeProblems
          
             // path from arr[0][0]
             // to arr[row][col]
-          var lists=  data.Permute(new int[] { 1, 2, 3 });
-            Console.WriteLine("[");
-            foreach (var list in lists)
-            {
-                Console.WriteLine($"    [{string.Join(',', list)}]");
-            }
-            Console.WriteLine("]");
+            Console.WriteLine(data.StrongPasswordCheckerII("-Aa1a1a1"));
+          //var lists=  data.Permute(new int[] { 1, 2, 3 });
+            //Console.WriteLine("[");
+            //foreach (var list in lists)
+            //{
+            //    Console.WriteLine($"    [{string.Join(',', list)}]");
+            //}
+            //Console.WriteLine("]");
             //if (data.BFS(grid, vis, 0, 0))
             //   Console.WriteLine("Yes");
             // else
