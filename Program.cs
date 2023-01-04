@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LeetCodeProblems
 {
@@ -6,14 +7,14 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            JumpGame data = new();
-           // while (true)
-         //   {
-               // var input = Console.ReadLine().Split(' ');
-                int[] array =  new int[] { 1,2,3 };
-                Console.WriteLine(data.CanJump(array));
-           // }
+            DestinationCity data = new();
+            IList<IList<string>> matrix = new List<IList<string>>();
+            matrix.Add(new List<string>() { "pYyNGfBYbm", "wxAscRuzOl" });
+            matrix.Add(new List<string>() { "kzwEQHfwce", "pYyNGfBYbm" });
+            //matrix.Add(new List<string>() { "Lima", "Sao Paulo" });
+            Console.WriteLine(data.DestCity(matrix));
           
+
         }
     }
 }
