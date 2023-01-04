@@ -22,7 +22,7 @@ namespace LeetCodeProblems
          
             // path from arr[0][0]
             // to arr[row][col]
-            Console.WriteLine(data.StrongPasswordCheckerII("-Aa1a1a1"));
+            Console.WriteLine(data.StrongPasswordCheckerII("yvTY#@IB#*!hjrQt-TLW&z)$@!%Duqt&ToskxHgnybqpndMI+wP&fcemIk#@KnkMTaUkcIbncpTL"));
           //var lists=  data.Permute(new int[] { 1, 2, 3 });
             //Console.WriteLine("[");
             //foreach (var list in lists)

@@ -12,7 +12,7 @@ namespace LeetCodeProblems
         public bool StrongPasswordCheckerII(string password)
         {
 
-            string regSyntax = @"^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-+]).*$";
+            string regSyntax = @"^(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()+-]).*$";
             Regex re = new Regex(regSyntax);
             if (re.IsMatch(password))
             {
