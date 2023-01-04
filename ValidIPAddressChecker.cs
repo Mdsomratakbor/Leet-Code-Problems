@@ -10,8 +10,6 @@ namespace LeetCodeProblems
     {
         public string ValidIPAddress(string queryIP)
         {
-
-
             var data = queryIP.Split(new Char[] { '.', ':' });
             if (data.Length == 4)
             {
