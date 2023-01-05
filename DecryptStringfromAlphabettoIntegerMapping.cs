@@ -18,7 +18,10 @@ namespace LeetCodeProblems
                
                     if (s[i+2]=='#')
                     {
-                        ch = (char)Convert(s.Substring(i, i+2));
+
+                    var data = s.Substring(3, i+1);
+                        ch = (char)Convert(s.Substring(i, i+1));
+                    Console.WriteLine(s);
                     i+=3;
                 }
                     else 
@@ -40,6 +43,7 @@ namespace LeetCodeProblems
 
         private char Convert(string v)
         {
+   
             int num = Int16.Parse(v);
             return (char)(num+96);
         }
