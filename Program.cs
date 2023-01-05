@@ -12,7 +12,7 @@ namespace LeetCodeProblems
             matrix.Add(new List<string>() { "pYyNGfBYbm", "wxAscRuzOl" });
             matrix.Add(new List<string>() { "kzwEQHfwce", "pYyNGfBYbm" });
             //matrix.Add(new List<string>() { "Lima", "Sao Paulo" });
-            Console.WriteLine(data.IsCircularSentence("Leetcode is cool"));
+            Console.WriteLine(data.IsCircularSentence("eetcode"));
           
 
         }

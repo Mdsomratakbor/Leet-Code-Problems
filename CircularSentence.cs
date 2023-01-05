@@ -13,13 +13,6 @@ namespace LeetCodeProblems
             var sentenceArray = sentence.Split(' ');
             int i = 0;
             int length = sentenceArray.Length;
-            if (length == 1)
-            {
-                if (sentenceArray[i][i] == sentenceArray[i].LastOrDefault())
-                {
-                    return true;
-                }
-            }
             while (i < length-1)
             {
           
