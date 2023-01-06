@@ -7,12 +7,12 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            DecryptStringfromAlphabettoIntegerMapping data = new();
+            CircularSentence data = new();
             IList<IList<string>> matrix = new List<IList<string>>();
             matrix.Add(new List<string>() { "pYyNGfBYbm", "wxAscRuzOl" });
             matrix.Add(new List<string>() { "kzwEQHfwce", "pYyNGfBYbm" });
             //matrix.Add(new List<string>() { "Lima", "Sao Paulo" });
-            Console.WriteLine(data.FreqAlphabets("123#26#"));
+            Console.WriteLine(data.IsCircularSentence("eetcode"));
           
 
         }
