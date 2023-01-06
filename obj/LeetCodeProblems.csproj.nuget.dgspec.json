@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "E:\\My Project\\Leet-Code-Problems\\LeetCodeProblems.csproj": {}
   },
   "projects": {
@@ -13,29 +12,12 @@
         "projectPath": "E:\\My Project\\Leet-Code-Problems\\LeetCodeProblems.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "E:\\My Project\\Leet-Code-Problems\\obj\\",
-=======
-    "D:\\LeetCode\\Leet-Code-Problems\\LeetCodeProblems.csproj": {}
-  },
-  "projects": {
-    "D:\\LeetCode\\Leet-Code-Problems\\LeetCodeProblems.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\LeetCode\\Leet-Code-Problems\\LeetCodeProblems.csproj",
-        "projectName": "LeetCodeProblems",
-        "projectPath": "D:\\LeetCode\\Leet-Code-Problems\\LeetCodeProblems.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\LeetCode\\Leet-Code-Problems\\obj\\",
->>>>>>> eb6bfd1f2a27cc36e56e7cfc4be71ff79161125f
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> eb6bfd1f2a27cc36e56e7cfc4be71ff79161125f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,11 +60,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
->>>>>>> eb6bfd1f2a27cc36e56e7cfc4be71ff79161125f
         }
       }
     }

@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "qwdJ+XavnYuBiGK1fgYsjXa6rSQGQfXuJ0fucia8JgN+cBlMrXGY3w5hLWklX5xIsQiAcmoQqZmF0S+SdQ3SDQ==",
   "success": true,
   "projectFilePath": "E:\\My Project\\Leet-Code-Problems\\LeetCodeProblems.csproj",
-=======
-  "dgSpecHash": "V69B9eUs0tykbAoTSbkO+0ysFMKQmPd6FOD7AHr0o6TV/Bp28Dl1go0S3KkKPiWGD7I5Kal+BJPnCI1mIkkl5g==",
-  "success": true,
-  "projectFilePath": "D:\\LeetCode\\Leet-Code-Problems\\LeetCodeProblems.csproj",
->>>>>>> eb6bfd1f2a27cc36e56e7cfc4be71ff79161125f
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file E:\\My Project\\Leet-Code-Problems\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
