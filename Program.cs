@@ -7,12 +7,21 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            WordPatternCheck data = new();
-            IList<IList<string>> matrix = new List<IList<string>>();
-            matrix.Add(new List<string>() { "pYyNGfBYbm", "wxAscRuzOl" });
-            matrix.Add(new List<string>() { "kzwEQHfwce", "pYyNGfBYbm" });
+
+            ReplaceWord data = new();
+
+  
+          //  IList<IList<string>> matrix = new List<IList<string>>();
+            // matrix.Add(new List<string>() { "cat", "bat", "rat" });
+            // matrix.Add(new List<string>() { "kzwEQHfwce", "pYyNGfBYbm" });
             //matrix.Add(new List<string>() { "Lima", "Sao Paulo" });
-            Console.WriteLine(data.WordPattern("abba","cat dog dog cat"));
+
+            IList<string> matrix = new List<string>() { "cat", "bat", "rat" };
+            string sen= "the cattle was rattled by the battery";
+            Console.WriteLine(data.ReplaceWords(matrix, sen));
+
+    
+
           
 
         }
