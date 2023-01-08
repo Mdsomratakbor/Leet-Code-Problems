@@ -10,24 +10,29 @@ namespace LeetCodeProblems
     {
         public string ReplaceWords(IList<string> dictionary, string sentence)
         {
+            var orderedDict = dictionary.OrderBy(s => s.Length);
             var sentenceArray = sentence.Split(' ');
-            for (int i = 0; i<sentenceArray.Length; i++)
+
+            for (int i = 0; i < sentenceArray.Length; i++)
             {
-               
-                    for(int j=0; j<sentenceArray[i].Length; j++)
+                bool isReplace = false;
+               // for (int j = 0; j < sentenceArray[i].Length; j++)
+               // {
+                    //sstring prefix = sentenceArray[i].Substring(0, j);
+                    foreach (var word in orderedDict)
                     {
-                        string prefix = sentenceArray[i].Substring(0, j);
-                    foreach (var word in dictionary)
-                    {
-                        if (word ==prefix)
+                        if (sentenceArray[i].StartsWith(word))
                         {
-                           sentenceArray[i] = prefix;
+                            sentenceArray[i] = word;
+                            isReplace = true;
                             break;
 
                         }
                     }
-                   
-                }
+                  //  if (isReplace) break;
+
+               // }
+               
             }
             return String.Join(" ", sentenceArray);
         }
