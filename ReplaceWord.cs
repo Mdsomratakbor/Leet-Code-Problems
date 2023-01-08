@@ -24,7 +24,7 @@ namespace LeetCodeProblems
                         if (sentenceArray[i].StartsWith(word))
                         {
                             sentenceArray[i] = word;
-                            isReplace = true;
+                            //isReplace = true;
                             break;
 
                         }
