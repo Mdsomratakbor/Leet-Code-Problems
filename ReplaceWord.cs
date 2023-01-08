@@ -15,7 +15,7 @@ namespace LeetCodeProblems
 
             for (int i = 0; i < sentenceArray.Length; i++)
             {
-                bool isReplace = false;
+              //  bool isReplace = false;
                // for (int j = 0; j < sentenceArray[i].Length; j++)
                // {
                     //sstring prefix = sentenceArray[i].Substring(0, j);
