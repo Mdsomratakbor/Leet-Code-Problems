@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            AppendCharactersToStringToMakeSubsequence data = new();
+            FirstUniqueCharacterString data = new();
 
   
           //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -18,7 +18,7 @@ namespace LeetCodeProblems
 
             IList<string> matrix = new List<string>() { "cat", "bat", "rat" };
             string sen= "the cattle was rattled by the battery";
-            Console.WriteLine(data.AppendCharacters("vrykt", "rkge"));
+            Console.WriteLine(data.FirstUniqChar("aabb"));
 
     
 
