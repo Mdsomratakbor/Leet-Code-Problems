@@ -18,7 +18,7 @@ namespace LeetCodeProblems
                     if(nums[i]+nums[j]== target)
                     {
                         arrayOfIndex[0] = i;
-                        arrayOfIndex[1] = i;
+                        arrayOfIndex[1] = j;
                     }
                 }
             }
