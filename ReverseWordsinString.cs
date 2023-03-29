@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeetCodeProblems
 {
-    public class ReverseWordsinString
+    public class ReverseWordsInString
     {
         public string ReverseWords(string s)
         {
