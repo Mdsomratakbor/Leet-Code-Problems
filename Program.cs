@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            ValidPalingdrom data = new();
+            DetectCapital data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -19,7 +19,7 @@ namespace LeetCodeProblems
             // IList<string> matrix = new List<string>() { "cat", "bat", "rat" };
             //string sen= "the cattle was rattled by the battery";
             //Console.WriteLine(data.IsValid("ab", new string[] { "ad", "bd", "aaab", "baa", "badab" }));
-            Console.WriteLine(data.IsPalindrome("A man, a plan, a canal -- Panama"));
+            Console.WriteLine(data.DetectCapitalUse("g"));
     
 
           
