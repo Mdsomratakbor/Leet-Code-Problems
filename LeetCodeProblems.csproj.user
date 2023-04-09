@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <None Update="Project Employees I.sql">
+      <SubType>Component</SubType>
+    </None>
+    <None Update="ReplaceEmployeeID.sql">
+      <SubType>Component</SubType>
+    </None>
+  </ItemGroup>
 </Project>
