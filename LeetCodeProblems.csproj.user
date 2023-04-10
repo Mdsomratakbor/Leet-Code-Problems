@@ -8,5 +8,8 @@
     <None Update="ReplaceEmployeeID.sql">
       <SubType>Component</SubType>
     </None>
+    <None Update="triangle-judgement.sql">
+      <SubType>Component</SubType>
+    </None>
   </ItemGroup>
 </Project>
