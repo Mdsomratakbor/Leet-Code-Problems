@@ -10,6 +10,9 @@ namespace BFS
     {
         public int MaxDepth(TreeNode root)
         {
+            if (root == null)
+                return 0;
+
             int maxPath = 0;
             Queue<TreeNode> queue = new Queue<TreeNode>();
             queue.Enqueue(root);
@@ -17,7 +20,7 @@ namespace BFS
             {
                 int levelSize = queue.Count;
                 maxPath++;
-                for(int i=0; i<levelSize; i++)
+                for (int i = 0; i < levelSize; i++)
                 {
                     TreeNode currentNode = queue.Dequeue();
                     if (currentNode.left != null)
