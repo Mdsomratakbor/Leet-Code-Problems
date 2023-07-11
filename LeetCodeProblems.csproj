@@ -5,12 +5,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Product-sales-analysis-ii.sql" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Product-sales-analysis-ii.sql" />
-  </ItemGroup>
-
 </Project>

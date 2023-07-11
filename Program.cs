@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            CountPrimesNumber data = new();
+            Merge_Sorted_Array data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -19,7 +19,10 @@ namespace LeetCodeProblems
             // IList<string> matrix = new List<string>() { "cat", "bat", "rat" };
             //string sen= "the cattle was rattled by the battery";
             //Console.WriteLine(data.IsValid("ab", new string[] { "ad", "bd", "aaab", "baa", "badab" }));
-            Console.WriteLine(data.CountPrimes(5000000));
+
+            int[] array1 = { 1, 2, 3, 0, 0, 0 };  
+            int[] array2 = { 2, 5, 6 };  
+            data.Merge(array1, 3, array2, 3);
     
 
           
