@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Merge_Sorted_Array data = new();
+            Check_Whether_Two_Strings_are_Almost_Equivalent data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            data.Merge(array1, 3, array2, 3);
+            var data2 =data.CheckAlmostEquivalent("zzzyyy", "iiiiii");
     
 
           

@@ -10,22 +10,19 @@ namespace LeetCodeProblems
     {
         public void Merge(int[] nums1, int m, int[] nums2, int n)
         {
-            int[] mergeArray = new int[m + n];
+            nums1 = new int[m + n];
             int length = 0;
             for (int i = 0; i < m; i++)
             {
-                mergeArray[length++] = nums1[i];
+                nums1[length++] = nums1[i];
             }
 
             for (int i = 0; i < n; i++)
             {
-                mergeArray[length++] = nums2[i];
+                nums1[length++] = nums2[i];
             }
-            mergeArray = SortOptimizedArray(mergeArray);
-            foreach (var data in mergeArray)
-            {
-                Console.WriteLine(data);
-            }
+            nums1 = SortOptimizedArray(nums1);
+         
            
 
         }
