@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Check_Whether_Two_Strings_are_Almost_Equivalent data = new();
+            Reverse_Vowels_of_a_String data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,8 +22,8 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.CheckAlmostEquivalent("zzzyyy", "iiiiii");
-    
+            var data2 =data.ReverseVowels("leetcode");
+    Console.WriteLine(data2);
 
           
 
