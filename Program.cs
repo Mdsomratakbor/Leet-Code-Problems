@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            CountPrimesNumber data = new();
+            Check_Whether_Two_Strings_are_Almost_Equivalent data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -19,7 +19,10 @@ namespace LeetCodeProblems
             // IList<string> matrix = new List<string>() { "cat", "bat", "rat" };
             //string sen= "the cattle was rattled by the battery";
             //Console.WriteLine(data.IsValid("ab", new string[] { "ad", "bd", "aaab", "baa", "badab" }));
-            Console.WriteLine(data.CountPrimes(5000000));
+
+            int[] array1 = { 1, 2, 3, 0, 0, 0 };  
+            int[] array2 = { 2, 5, 6 };  
+            var data2 =data.CheckAlmostEquivalent("zzzyyy", "iiiiii");
     
 
           
