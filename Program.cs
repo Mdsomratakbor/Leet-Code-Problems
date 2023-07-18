@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Reverse_Vowels_of_a_String data = new();
+            Reverse_Words_in_a_String_III data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.ReverseVowels("leetcode");
+            var data2 =data.ReverseWords("Let's take LeetCode contest");
     Console.WriteLine(data2);
 
           
