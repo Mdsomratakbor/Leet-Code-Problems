@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Minimize_String_Length data = new();
+            Minimum_String_Length_After_Removing_Substrings data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.MinimizedStringLength("aaabc");
+            var data2 =data.MinLength("ABFCACDB");
     Console.WriteLine(data2);
 
           
