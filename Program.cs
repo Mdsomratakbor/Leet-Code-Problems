@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Reverse_Words_in_a_String_III data = new();
+            Minimize_String_Length data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.ReverseWords("Let's take LeetCode contest");
+            var data2 =data.MinimizedStringLength("aaabc");
     Console.WriteLine(data2);
 
           
