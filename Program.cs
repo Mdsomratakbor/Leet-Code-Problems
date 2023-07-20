@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Minimum_String_Length_After_Removing_Substrings data = new();
+            Number_of_Senior_Citizens data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.MinLength("ABFCACDB");
+            var data2 =data.CountSeniors(new string[] {"7868190130M7522", "5303914400F9211", "9273338290F4010"});
     Console.WriteLine(data2);
 
           
