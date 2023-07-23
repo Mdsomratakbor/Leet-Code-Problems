@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            String_Matching_in_an_Array data = new();
+            Reverse_Only_Letters data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.StringMatching(new string[] { "mass", "as", "hero", "superhero" });
+            var data2 =data.ReverseOnlyLetters("ab-cd");
     Console.WriteLine(data2);
 
           
