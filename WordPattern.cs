@@ -16,27 +16,24 @@ namespace LeetCodeProblems
             if (patternDataLength != pattern.Length)
                 return false;
 
-            List<KeyValuePair<char, string>> list = new List<KeyValuePair<char, string>>();
+            Dictionary<char, string> list = new Dictionary<char, string>();
             for (int i = 0; i < patternDataLength; i++)
             {
 
-                list.Add(new KeyValuePair<char, string>(pattern[i], patternData[i]));
-
-            }
-            int index = 0;
-            foreach (KeyValuePair<char, string> pair in list)
-            {
-                if (pair.Key == pattern[index] && pair.Value == patternData[index])
+                if (list.ContainsKey(pattern[i]) && list[pattern[i]].Equals(patternData[i]))
                 {
-                    index++;
                     continue;
-                
+                }
+                else if (!list.ContainsKey(pattern[i]) && !list.ContainsValue(patternData[i]))
+                {
+                    list.Add(pattern[i], patternData[i]);
                 }
                 else
                 {
-                   return false;
+                    return false;
                 }
-            
+             
+
             }
             return true;
         }
