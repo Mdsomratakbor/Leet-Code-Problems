@@ -15,13 +15,10 @@ namespace LeetCodeProblems
             {
                 if (word[i] == ch)
                 {
-                   
-
                     int left = 0, right = i;
                     while (left < right)
                     {
                         char temp = newArray[left];
-
                         newArray[left] = newArray[right];
                         newArray[right] = temp;
                         left++;
