@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            WordPatternCheck data = new();
+            Check_if_Numbers_Are_Ascending_in_a_Sentence data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.WordPattern("aba", "dog cat cat");
+            var data2 =data.AreNumbersAscending("1 box has 3 blue 4 red 6 green and 12 yellow marbles");
     Console.WriteLine(data2);
 
           
