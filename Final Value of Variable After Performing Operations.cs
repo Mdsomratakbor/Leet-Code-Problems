@@ -13,11 +13,11 @@ namespace LeetCodeProblems
             int sum = 0;
             foreach (var operation in operations)
             {
-                if(operation.Equals("--x") || operation.Equals("x--"))
+                if(operation.Equals("--X") || operation.Equals("X--"))
                 {
                     sum -= 1;
                 }
-                else if(operation.Equals("++x") || operation.Equals("x++"))
+                else if(operation.Equals("++X") || operation.Equals("X++"))
                 {
                     sum += 1;
                 }
