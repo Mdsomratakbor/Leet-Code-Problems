@@ -13,17 +13,12 @@ namespace LeetCodeProblems
             
             int count = 0;
 
-            int number = 0;
             for(int i=0; i<s.Length; i++)
             {
                 if (s[i] == 'X')
                 {
-                    number++;
-                    if (number == 3)
-                    {
-                        number = 0;
-                        count ++;
-                    }
+                   count++;
+                    i += 2;
                         
                 }
             }
