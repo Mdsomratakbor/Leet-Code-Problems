@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Consecutive_Characters data = new();
+            Replace_in_a_string_such_that_no_two_adjacent_characters_are_same data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.MaxPower("cc");
+            var data2 =data.ModifyString("b?a");
     Console.WriteLine(data2);
 
           
