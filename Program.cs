@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Minimum_Moves_to_Convert_String data = new();
+            Consecutive_Characters data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.MinimumMoves("XXOX");
+            var data2 =data.MaxPower("cc");
     Console.WriteLine(data2);
 
           
