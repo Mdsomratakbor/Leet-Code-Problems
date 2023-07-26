@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Replace_in_a_string_such_that_no_two_adjacent_characters_are_same data = new();
+            Rearrange_Spaces_Between_Words data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.ModifyString("b?a");
+            var data2 =data.ReorderSpaces("xmwol ulbyf");
     Console.WriteLine(data2);
 
           
