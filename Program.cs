@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Rearrange_Spaces_Between_Words data = new();
+            First_Letter_to_Appear_Twice data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.ReorderSpaces("xmwol ulbyf");
+            var data2 =data.RepeatedCharacter("hthg");
     Console.WriteLine(data2);
 
           
