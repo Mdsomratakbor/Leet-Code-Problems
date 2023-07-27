@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Count_the_Number_of_Vowel_Strings_in_Range data = new();
+            Split_Strings_by_Separator data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -20,9 +20,9 @@ namespace LeetCodeProblems
             //string sen= "the cattle was rattled by the battery";
             //Console.WriteLine(data.IsValid("ab", new string[] { "ad", "bd", "aaab", "baa", "badab" }));
 
-            int[] array1 = { 1, 2, 3, 0, 0, 0 };  
-            int[] array2 = { 2, 5, 6 };  
-            var data2 =data.VowelStrings( new string[] {"are", "amy", "u"}, 0, 2);
+            int[] array1 = { 1, 2, 3, 0, 0, 0 };
+            int[] array2 = { 2, 5, 6 };
+            var data2 = data.SplitWordsBySeparator(new string[] {"$easy$", "$problem$"}, '$');
     Console.WriteLine(data2);
 
           
