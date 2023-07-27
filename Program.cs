@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Check_Distances_Between_Same_Letters data = new();
+            Count_the_Number_of_Vowel_Strings_in_Range data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };  
             int[] array2 = { 2, 5, 6 };  
-            var data2 =data.CheckDistances("abaccb", new int[] { 1, 3, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 });
+            var data2 =data.VowelStrings( new string[] {"are", "amy", "u"}, 0, 2);
     Console.WriteLine(data2);
 
           
