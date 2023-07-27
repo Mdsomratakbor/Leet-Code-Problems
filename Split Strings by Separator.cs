@@ -18,6 +18,7 @@ namespace LeetCodeProblems
                 {
                    for(int i=0; i<split.Length; i++)
                     {
+                        if(split[i].Length>0)
                         result.Add(split[i]);
                     }
                 }

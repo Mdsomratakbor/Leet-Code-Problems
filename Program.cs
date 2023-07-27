@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Split_Strings_by_Separator data = new();
+            Find_Maximum_Number_of_String_Pairs data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };
             int[] array2 = { 2, 5, 6 };
-            var data2 = data.SplitWordsBySeparator(new string[] {"$easy$", "$problem$"}, '$');
+            var data2 = data.MaximumNumberOfStringPairs(new string[] { "cd", "ac", "dc", "ca", "zz" });
     Console.WriteLine(data2);
 
           
