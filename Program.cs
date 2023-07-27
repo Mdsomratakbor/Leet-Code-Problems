@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Find_Maximum_Number_of_String_Pairs data = new();
+            Determine_if_Two_Events_Have_Conflict data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,7 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };
             int[] array2 = { 2, 5, 6 };
-            var data2 = data.MaximumNumberOfStringPairs(new string[] { "cd", "ac", "dc", "ca", "zz" });
+            var data2 = data.HaveConflict(new string[] {"01:15", "02:00" }, new string[] { "02:00", "03:00" });
     Console.WriteLine(data2);
 
           
