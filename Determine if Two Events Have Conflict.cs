@@ -16,7 +16,10 @@ namespace LeetCodeProblems
             TimeSpan event2Starttime = TimeSpan.Parse(event2[0]);
             TimeSpan event2Endtime = TimeSpan.Parse(event2[1]);
 
-             return !(event1Startime >= event2Endtime || event2Starttime >= event1Endtime);
+            if ((event1Startime<=event1Endtime && event1Endtime<event2Starttime && event2Starttime<=event2Endtime) ||
+               (event2Starttime<=event2Endtime && event2Endtime<event1Startime && event1Startime<=event1Endtime))
+                return false;
+            return true;
 
         }
     }

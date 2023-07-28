@@ -11,23 +11,30 @@ namespace LeetCodeProblems
       
         public string Reformat(string s)
         {
-            char[] chars = s.ToCharArray();
-            for(int i=0; i<chars.Length-1; i++)
+
+            StringBuilder result = new StringBuilder();
+            int i = 0;
+            while (i<s.Length-1)
             {
-                if ((char.IsDigit(chars[i]) && char.IsLetter(chars[i+1])) || (char.IsDigit(chars[i+1]) && char.IsLetter(chars[i])))
+                if ((char.IsDigit(s[i]) && char.IsLetter(s[i+1])) || (char.IsDigit(s[i+1]) && char.IsLetter(s[i])))
                 {
-                    char temp = chars[i];
-                    chars[i] =  chars[i+1];
-                    chars[i+1] = temp;
+                    char temp = s[i];
+                    result.Append(s[i+1]);
+                    result.Append(temp);
+                    i+=2;
                 }
-                else if((char.IsDigit(chars[i]) && char.IsDigit(chars[i+1])) || (char.IsLetter(chars[i+1]) && char.IsLetter(chars[i])))
+                else
                 {
-                    chars = null;
-                    break;
+                    i++;
                 }
+                //else if((char.IsDigit(chars[i]) && char.IsDigit(chars[i+1])) || (char.IsLetter(chars[i+1]) && char.IsLetter(chars[i])))
+                //{
+                //    chars = null;
+                //    break;
+                //}
             }
-            string result = new string(chars);
-            return result;
+            // string result = new string(result);
+            return result.ToString();
         }
     }
 }
