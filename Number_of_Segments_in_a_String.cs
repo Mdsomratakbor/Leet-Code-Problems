@@ -10,7 +10,8 @@ namespace LeetCodeProblems
     {
         public int CountSegments(string s)
         {
-            return s.Split(" ").Length;
+
+            return s.Split(' ').Where(c=>c!= "").Count();
         }
     }
 }
