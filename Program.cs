@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Number_of_Segments_in_a_String data = new();
+            Count_Vowel_Strings_in_Ranges data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -22,7 +22,20 @@ namespace LeetCodeProblems
 
             int[] array1 = { 1, 2, 3, 0, 0, 0 };
             int[] array2 = { 2, 5, 6 };
-            var data2 = data.CountSegments("                ");
+            int[,] twoDimensionalArray = new int[,]
+{
+    { 0, 2 },
+    { 1, 4 },
+    { 1, 1 }
+};
+            int[][] jaggedArray = new int[][]
+{
+    new int[] { 0, 2 },
+    new int[] { 1, 4 },
+    new int[] { 1, 1 }
+};
+            var data2 = data.VowelStrings(new string[] { "aba", "bcb", "ece", "aa", "e" }, jaggedArray);
+
     Console.WriteLine(data2);
 
           
