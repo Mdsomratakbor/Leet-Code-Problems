@@ -10,20 +10,26 @@ namespace LeetCodeProblems
     {
         public char FindTheDifference(string s, string t)
         {
-            char c = ' ';
-            if (s.Length == 0 && t.Length>0)
-                return t[0];
+            //var c = ' ';
+            //foreach(var charater in t)
+            //{
+            //    if (!s.Contains(charater))
+            //    {
+            //        c = charater;
+            //        break;
+            //    }
+            //}
+            // if (s.Length == 0)
+            //     return t[0];
+            //var c = t.Substring(0, s.Length - 1);
+            // return c[0];
 
-           
-             
-                    
-                        c=  t[s.Length];
-                   
-                    
-                
-            
 
-            return c;
+            foreach (char c in s)
+            {
+                t = t.Remove(t.IndexOf(c), 1);
+            }
+            return t[0];
         }
     }
 }

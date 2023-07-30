@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Count_Vowel_Strings_in_Ranges data = new();
+            Find_the_Difference data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.VowelStrings(new string[] { "aba", "bcb", "ece", "aa", "e" }, jaggedArray);
+            var data2 = data.FindTheDifference("abcd",  "abcde");
 
     Console.WriteLine(data2);
 
