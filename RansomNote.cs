@@ -10,7 +10,13 @@ namespace LeetCodeProblems
     {
         public bool CanConstruct(string ransomNote, string magazine)
         {
-            return magazine.Contains(ransomNote);
+            bool output = true;
+            foreach (var item in ransomNote)
+            {
+                if(!magazine.Contains(item))
+                   return  false;
+            }
+            return output;
         }
     }
 }
