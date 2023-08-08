@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            To_Lower_Case data = new();
+            Remove_Letter_To_Equalize_Frequency data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.ToLowerCase("Hellow");
+            var data2 = data.EqualFrequency("abcc");
 
     Console.WriteLine(data2);
 
