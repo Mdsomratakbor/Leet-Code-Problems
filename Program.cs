@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Valid_Palindrome_II data = new();
+            To_Lower_Case data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.ValidPalindrome("abca");
+            var data2 = data.ToLowerCase("Hellow");
 
     Console.WriteLine(data2);
 
