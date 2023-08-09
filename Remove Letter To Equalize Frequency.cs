@@ -10,28 +10,76 @@ namespace LeetCodeProblems
     {
         public bool EqualFrequency(string word)
         {
+            for (int i = 0; i < word.Length; i++)
+            {
+               if(IsEqual(word, i))
+                    return true;
+            }
+            return false;
+        }
+        private bool IsEqual(string word, int index) {
+
+            word = word.Remove(index, 1);
             Dictionary<char, int> keyValuePairs = new Dictionary<char, int>();
-            for(int i=0; i<word.Length; i++)
+            for (int i = 0; i < word.Length; i++)
             {
                 if (keyValuePairs.ContainsKey(word[i]))
-                {
                     keyValuePairs[word[i]]++;
-                }
+                
                 else
-                {
                     keyValuePairs.Add(word[i], 1);
-                }
             }
-
-            int maxFrequency = keyValuePairs.Values.Max();
-            int minFrequency = keyValuePairs.Values.Min();
-
-            // Check if all frequencies are equal
-            if (maxFrequency == minFrequency)
-                return true;
-
-            return maxFrequency - minFrequency <= 1;
-
+            for(int i = 1; i<word.Length; i++)
+            {
+                if (keyValuePairs[word[i]] != keyValuePairs[word[i-1]])
+                    return false;
+            }
+            
+            return true;
         }
-    }
+            //public bool EqualFrequency(string word)
+            //{
+            //    Dictionary<char, int> keyValuePairs = new Dictionary<char, int>();
+            //    for (int i = 0; i < word.Length; i++)
+            //    {
+            //        if (keyValuePairs.ContainsKey(word[i]))
+            //        {
+            //            keyValuePairs[word[i]]++;
+            //        }
+            //        else
+            //        {
+            //            keyValuePairs.Add(word[i], 1);
+            //        }
+            //    }
+
+            //int count = keyValuePairs.Count(x => x.Value > 1);
+            //if(count == 0)
+            //    return true;
+            //bool frequenciesEqual = true;
+            //foreach (char c in keyValuePairs.Keys)
+            //{
+            //    int currentCount = keyValuePairs[c];
+            //    keyValuePairs[c]--;
+
+            //    foreach (var kvp in keyValuePairs)
+            //    {
+            //        if (kvp.Value != keyValuePairs[c] && kvp.Value != currentCount - 1)
+            //        {
+            //            frequenciesEqual = false;
+            //            break;
+            //        }
+            //        else
+            //        {
+            //            frequenciesEqual = true;
+            //        }
+            //    }
+            //    keyValuePairs[c]++;
+
+            //    if (frequenciesEqual)
+            //        return true;
+            //}
+            //return frequenciesEqual;
+        }
+
+    
 }

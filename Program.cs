@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.EqualFrequency("abcc");
+            var data2 = data.EqualFrequency("aazz");
 
     Console.WriteLine(data2);
 
