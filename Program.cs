@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Occurrences_After_Bigram data = new();
+            Day_of_the_Year data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.FindOcurrences("we we we we will rock you", "we", "we");
+            var data2 = data.DayOfYear("2019-01-09");
 
     Console.WriteLine(data2);
 
