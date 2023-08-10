@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Remove_All_Adjacent_Duplicates_In_String data = new();
+            Occurrences_After_Bigram data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.RemoveDuplicates("abbaca");
+            var data2 = data.FindOcurrences("we we we we will rock you", "we", "we");
 
     Console.WriteLine(data2);
 

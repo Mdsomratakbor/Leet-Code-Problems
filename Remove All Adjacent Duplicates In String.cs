@@ -12,7 +12,6 @@ namespace LeetCodeProblems
         {
             if (s.Length < 2)
                 return s;
-            string result ="";
             int i, j;
             for (i = 0; i < s.Length-1; i++)
             {
