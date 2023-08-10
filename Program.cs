@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Remove_Letter_To_Equalize_Frequency data = new();
+            Find_Common_Characters data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.EqualFrequency("aazz");
+            var data2 = data.CommonChars(new string[] {"bella", "label", "roller"});
 
     Console.WriteLine(data2);
 
