@@ -12,7 +12,6 @@ namespace LeetCodeProblems
         public IList<string> CommonChars(string[] words)
         {
             IList<string> result = new List<string>();
-            //string word = words[0];
 
            Dictionary<char, int> finalCount = new Dictionary<char, int>();
 
@@ -29,32 +28,12 @@ namespace LeetCodeProblems
                 {
                     if (count.ContainsKey(c))
                         count[c]++;
-                            //count.Add(c, finalCount[c]+1);
                     else
                         count.Add(c, 1);
                 }
 
                 for (char c = 'a'; c <= 'z'; ++c)
                     finalCount[c] = Math.Min(finalCount[c], count.GetValueOrDefault(c, 0));
-                //int targetCount = word.Count(x => x == c);
-                //int isEqualEveryCharater = words.Count(str => str.Count(c => c == c));
-
-
-
-                //bool isTrue = true;
-                //foreach (string word1 in words)
-                //{
-                //    if (!word1.Contains(c))
-                //    {
-                //        isTrue = false;
-                //        break;
-                //    }
-
-                //}
-                //if (isTrue)
-                //{
-                //    result.Add(c.ToString());
-                //}
 
             }
             for (char c = 'a'; c <= 'z'; ++c)

@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Find_Common_Characters data = new();
+            Remove_All_Adjacent_Duplicates_In_String data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.CommonChars(new string[] {"bella", "label", "roller"});
+            var data2 = data.RemoveDuplicates("abbaca");
 
     Console.WriteLine(data2);
 
