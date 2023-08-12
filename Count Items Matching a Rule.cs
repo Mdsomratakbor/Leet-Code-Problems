@@ -8,7 +8,28 @@ namespace LeetCodeProblems
 {
     public class Count_Items_Matching_a_Rule
     {
+
         public int CountMatches(IList<IList<string>> items, string ruleKey, string ruleValue)
+        {
+            int count = 0;
+
+           Dictionary<string, int> keys = new Dictionary<string, int>()
+           {
+               {"type", 0 },
+               {"color", 1 },
+               {"name", 2 }
+           };
+
+            for (int i = 0; i < items.Count; i++)
+            {
+                if (items[i][keys[ruleKey]]== ruleValue) count++;
+            }
+
+                return count;
+
+        }
+
+        public int CountMatches_old(IList<IList<string>> items, string ruleKey, string ruleValue)
         {
             int count = 0;
 
