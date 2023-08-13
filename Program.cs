@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Jewels_and_Stones data = new();
+            Backspace_String_Compare data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,9 +34,10 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.NumJewelsInStones("aA","aAAbbbb");
+            var data2 = data.BackspaceCompare("a##c", "#a#c");
 
-    Console.WriteLine(data2);
+
+            Console.WriteLine(data2);
 
           
 
