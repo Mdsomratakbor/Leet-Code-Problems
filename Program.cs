@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Student_Attendance_Record_I data = new();
+            Jewels_and_Stones data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.CheckRecord("PPALLP");
+            var data2 = data.NumJewelsInStones("aA","aAAbbbb");
 
     Console.WriteLine(data2);
 
