@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Number_of_Different_Integers_in_a_String data = new();
+            Most_Common_Word data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.NumDifferentIntegers("a123bc34d8ef34");
+            var data2 = data.MostCommonWord("..Bob hit a ball, the hit BALL flew far after it was hit.", new string[] {"hit"});
 
 
             Console.WriteLine(data2);
