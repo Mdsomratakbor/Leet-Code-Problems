@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Backspace_String_Compare data = new();
+            Number_of_Different_Integers_in_a_String data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.BackspaceCompare("a##c", "#a#c");
+            var data2 = data.NumDifferentIntegers("a123bc34d8ef34");
 
 
             Console.WriteLine(data2);
