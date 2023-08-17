@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Most_Common_Word data = new();
+            Delete_Characters_to_Make_Fancy_String data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +34,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.MostCommonWord("..Bob hit a ball, the hit BALL flew far after it was hit.", new string[] {"hit"});
+            var data2 = data.MakeFancyString("abbcccddddeeeee");
 
 
             Console.WriteLine(data2);

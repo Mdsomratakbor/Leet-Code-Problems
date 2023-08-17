@@ -2,13 +2,13 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <None Update="Project Employees I.sql">
+    <None Update="SQL\Project Employees I.sql">
       <SubType>Component</SubType>
     </None>
-    <None Update="ReplaceEmployeeID.sql">
+    <None Update="SQL\ReplaceEmployeeID.sql">
       <SubType>Component</SubType>
     </None>
-    <None Update="triangle-judgement.sql">
+    <None Update="SQL\triangle-judgement.sql">
       <SubType>Component</SubType>
     </None>
   </ItemGroup>
