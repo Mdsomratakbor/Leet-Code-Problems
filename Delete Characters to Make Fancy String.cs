@@ -26,7 +26,7 @@ namespace LeetCodeProblems
                         break;
                     }
                 }
-                if (count > 2 && i + 2 < s.Length)
+                if (count > 2)
                 {
                     s = s.Remove(i + 2, count - 2);
                     i += count - 2;

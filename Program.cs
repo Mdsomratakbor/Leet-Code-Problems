@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCodeProblems.Medium;
+using System;
 using System.Collections.Generic;
 
 namespace LeetCodeProblems
@@ -8,7 +9,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Delete_Characters_to_Make_Fancy_String data = new();
+            Sort_Vowels_in_a_String data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -34,7 +35,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.MakeFancyString("abbcccddddeeeee");
+            var data2 = data.SortVowels("lEetcOde");
 
 
             Console.WriteLine(data2);
