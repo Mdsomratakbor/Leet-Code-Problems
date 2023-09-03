@@ -1,4 +1,5 @@
-﻿using LeetCodeProblems.Medium;
+﻿using LeetCodeProblems.Array_Problems.Easy;
+using LeetCodeProblems.Medium;
 using System;
 using System.Collections.Generic;
 
@@ -9,7 +10,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Sort_Vowels_in_a_String data = new();
+            Pascal_s_Triangle data = new();
 
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
@@ -35,7 +36,7 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.SortVowels("lEetcOde");
+            var data2 = data.Generate(4);
 
 
             Console.WriteLine(data2);
