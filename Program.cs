@@ -1,4 +1,5 @@
 ﻿using LeetCodeProblems.Array_Problems.Easy;
+using LeetCodeProblems.Breadth_First_Search_Problem;
 using LeetCodeProblems.Medium;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,14 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Pascal_s_Triangle data = new();
+            Minimum_Depth_of_Binary_Tree data = new();
 
+            TreeNode root = new TreeNode(2);
+            root.right = new TreeNode(3);
+            root.left = new TreeNode(4);
+            root.right.right = new TreeNode(4);
+            root.right.right.right = new TreeNode(5);
+            root.right.right.right.right = new TreeNode(6);
 
             //  IList<IList<string>> matrix = new List<IList<string>>();
             // matrix.Add(new List<string>() { "cat", "bat", "rat" });
@@ -36,12 +43,12 @@ namespace LeetCodeProblems
     new int[] { 1, 4 },
     new int[] { 1, 1 }
 };
-            var data2 = data.Generate(4);
+            var data2 = data.MinDepth(root);
 
 
             Console.WriteLine(data2);
 
-          
+
 
         }
     }
