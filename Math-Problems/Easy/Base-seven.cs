@@ -31,14 +31,12 @@ namespace LeetCodeProblems
                 stringBuilder.Append(num%7);
                 num /= 7;
             }
-           string result = stringBuilder.ToString();
-            result = result.Reverse().ToString();
             if (negatingNumber)
             {
-                result.Concat("-");
+                stringBuilder.Append("-");
                 
             }
-            return stringBuilder.ToString();
+            return new string(stringBuilder.ToString().Reverse().ToArray()); ;
 
         }
     }

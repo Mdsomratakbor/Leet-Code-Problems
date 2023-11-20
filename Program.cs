@@ -11,7 +11,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            AddBinaryProblem data = new();
+            Base_seven data = new();
 
 //            TreeNode root = new TreeNode(2);
 //            root.right = new TreeNode(3);
@@ -43,7 +43,7 @@ namespace LeetCodeProblems
 //    new int[] { 1, 4 },
 //    new int[] { 1, 1 }
 //};
-         var data2 = data.AddBinary("1010", "1011");
+         var data2 = data.ConvertToBase7(-7);
 
 
             Console.WriteLine(data2);
