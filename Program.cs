@@ -12,7 +12,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            ExcelSheetColumnTitle data = new();
+            HappyNumber data = new();
 
 //            TreeNode root = new TreeNode(2);
 //            root.right = new TreeNode(3);
@@ -44,7 +44,7 @@ namespace LeetCodeProblems
 //    new int[] { 1, 4 },
 //    new int[] { 1, 1 }
 //};
-         var data2 = data.ConvertToTitle(700);
+         var data2 = data.IsHappy(2);
 
 
             Console.WriteLine(data2);
