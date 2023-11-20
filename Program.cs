@@ -1,5 +1,6 @@
 ﻿using LeetCodeProblems.Array_Problems.Easy;
 using LeetCodeProblems.Breadth_First_Search_Problem;
+using LeetCodeProblems.Math_Problems.Easy;
 using LeetCodeProblems.Medium;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Base_seven data = new();
+            ExcelSheetColumnTitle data = new();
 
 //            TreeNode root = new TreeNode(2);
 //            root.right = new TreeNode(3);
@@ -43,7 +44,7 @@ namespace LeetCodeProblems
 //    new int[] { 1, 4 },
 //    new int[] { 1, 1 }
 //};
-         var data2 = data.ConvertToBase7(-7);
+         var data2 = data.ConvertToTitle(700);
 
 
             Console.WriteLine(data2);
