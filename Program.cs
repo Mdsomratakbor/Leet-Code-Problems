@@ -12,7 +12,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            HappyNumber data = new();
+            Self_DividingNumbers data = new();
 
 //            TreeNode root = new TreeNode(2);
 //            root.right = new TreeNode(3);
@@ -44,7 +44,7 @@ namespace LeetCodeProblems
 //    new int[] { 1, 4 },
 //    new int[] { 1, 1 }
 //};
-         var data2 = data.IsHappy(2);
+         var data2 = data.SelfDividingNumbers(1, 22);
 
 
             Console.WriteLine(data2);
