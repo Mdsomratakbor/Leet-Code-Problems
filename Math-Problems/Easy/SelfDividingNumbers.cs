@@ -18,19 +18,19 @@ namespace LeetCodeProblems.Math_Problems.Easy
                 while(num > 0)
                 {
                     int digit = (num % 10);
-                    if (digit>0)
-                    {
-                        if (i% digit!= 0)
+                    //if (digit>0)
+                    //{
+                        if (digit == 0 || i % digit!= 0)
                         {
                             isdivisable = false;
                             break;
                         }
-                    }
-                    else
-                    {
-                        isdivisable = false;
-                        break;
-                    }
+                    //}
+                    //else
+                    //{
+                    //    isdivisable = false;
+                    //    break;
+                    //}
 
                     num = num / 10;
                 }
