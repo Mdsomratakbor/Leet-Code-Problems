@@ -12,7 +12,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Self_DividingNumbers data = new();
+            Fibonacci_Number data = new();
 
 //            TreeNode root = new TreeNode(2);
 //            root.right = new TreeNode(3);
@@ -44,7 +44,7 @@ namespace LeetCodeProblems
 //    new int[] { 1, 4 },
 //    new int[] { 1, 1 }
 //};
-         var data2 = data.SelfDividingNumbers(1, 22);
+         var data2 = data.Fib(3);
 
 
             Console.WriteLine(data2);
