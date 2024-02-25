@@ -14,7 +14,7 @@ namespace LeetCodeProblems.Math_Problems.Medium
             int bx1, int by1, 
             int bx2, int by2)
         {
-            int areaOfRectangleOne = Math.Abs(ax1-ax2) * Math.Abs(ay1-ay2);
+            int areaOfRectangleOne = Math.Abs(ax1-ax2) * Math.Abs(ay1-ay2); // Menhattan Distace
             int areaOfRectangleTwo = Math.Abs(bx1-bx2) * Math.Abs(by1-by2);
 
             int x_distance = Math.Min(ax2, bx2) - Math.Max(ax1, bx1);
