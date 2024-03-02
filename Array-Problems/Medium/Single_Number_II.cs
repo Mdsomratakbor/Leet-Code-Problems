@@ -13,7 +13,7 @@ namespace LeetCodeProblems.Array_Problems.Medium
         /// </summary>
         /// <param name="nums"></param>
         /// <returns></returns>
-        public int SingleNumber(int[] nums)
+        public int SingleNumberFirstApproach(int[] nums)
         {
             HashSet<int> hasSet = new HashSet<int>();
             HashSet<int> hasSetOfShadows = new HashSet<int>();
@@ -32,6 +32,24 @@ namespace LeetCodeProblems.Array_Problems.Medium
                 }
             }
             return hasSet.FirstOrDefault();
+        }
+
+        /// <summary>
+        /// runtime  74ms and memory 42.4 MB 
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+
+        public int SingleNumber(int[] nums)
+        {
+            Array.Sort(nums);
+
+            for(int i=1; i<nums.Length; i+=3)
+            {
+                if (nums[i - 1] != nums[i] || nums[i] != nums[i + 1])
+                    return nums[i-1];
+            }
+            return nums[nums.Length - 1];
         }
     }
 }

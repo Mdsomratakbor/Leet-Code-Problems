@@ -48,7 +48,7 @@ namespace LeetCodeProblems
 
             // 000, 111, 99
             // 
-            var data = new int[] { 0, 1, 0, 1, 0, 1, 99 };
+            var data = new int[] {  1, 1, 0, 1, 99,99,99 };
          var data2 = nameOfClass.SingleNumber(data);
 
 
