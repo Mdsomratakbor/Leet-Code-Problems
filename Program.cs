@@ -1,4 +1,5 @@
 ﻿using LeetCodeProblems.Array_Problems.Easy;
+using LeetCodeProblems.Array_Problems.Medium;
 using LeetCodeProblems.Breadth_First_Search_Problem;
 using LeetCodeProblems.Math_Problems.Easy;
 using LeetCodeProblems.Medium;
@@ -12,39 +13,43 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Fibonacci_Number data = new();
+            Single_Number_II nameOfClass = new();
 
-//            TreeNode root = new TreeNode(2);
-//            root.right = new TreeNode(3);
-//            root.left = new TreeNode(4);
-//            root.right.right = new TreeNode(4);
-//            root.right.right.right = new TreeNode(5);
-//            root.right.right.right.right = new TreeNode(6);
+            //            TreeNode root = new TreeNode(2);
+            //            root.right = new TreeNode(3);
+            //            root.left = new TreeNode(4);
+            //            root.right.right = new TreeNode(4);
+            //            root.right.right.right = new TreeNode(5);
+            //            root.right.right.right.right = new TreeNode(6);
 
-//            //  IList<IList<string>> matrix = new List<IList<string>>();
-//            // matrix.Add(new List<string>() { "cat", "bat", "rat" });
-//            // matrix.Add(new List<string>() { "kzwEQHfwce", "pYyNGfBYbm" });
-//            //matrix.Add(new List<string>() { "Lima", "Sao Paulo" });
+            //            //  IList<IList<string>> matrix = new List<IList<string>>();
+            //            // matrix.Add(new List<string>() { "cat", "bat", "rat" });
+            //            // matrix.Add(new List<string>() { "kzwEQHfwce", "pYyNGfBYbm" });
+            //            //matrix.Add(new List<string>() { "Lima", "Sao Paulo" });
 
-//            // IList<string> matrix = new List<string>() { "cat", "bat", "rat" };
-//            //string sen= "the cattle was rattled by the battery";
-//            //Console.WriteLine(data.IsValid("ab", new string[] { "ad", "bd", "aaab", "baa", "badab" }));
+            //            // IList<string> matrix = new List<string>() { "cat", "bat", "rat" };
+            //            //string sen= "the cattle was rattled by the battery";
+            //            //Console.WriteLine(data.IsValid("ab", new string[] { "ad", "bd", "aaab", "baa", "badab" }));
 
-//            int[] array1 = { 1, 2, 3, 0, 0, 0 };
-//            int[] array2 = { 2, 5, 6 };
-//            int[,] twoDimensionalArray = new int[,]
-//{
-//    { 0, 2 },
-//    { 1, 4 },
-//    { 1, 1 }
-//};
-//            int[][] jaggedArray = new int[][]
-//{
-//    new int[] { 0, 2 },
-//    new int[] { 1, 4 },
-//    new int[] { 1, 1 }
-//};
-         var data2 = data.Fib(3);
+            //            int[] array1 = { 1, 2, 3, 0, 0, 0 };
+            //            int[] array2 = { 2, 5, 6 };
+            //            int[,] twoDimensionalArray = new int[,]
+            //{
+            //    { 0, 2 },
+            //    { 1, 4 },
+            //    { 1, 1 }
+            //};
+            //            int[][] jaggedArray = new int[][]
+            //{
+            //    new int[] { 0, 2 },
+            //    new int[] { 1, 4 },
+            //    new int[] { 1, 1 }
+            //};
+
+            // 000, 111, 99
+            // 
+            var data = new int[] { 0, 1, 0, 1, 0, 1, 99 };
+         var data2 = nameOfClass.SingleNumber(data);
 
 
             Console.WriteLine(data2);
