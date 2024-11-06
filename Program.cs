@@ -1,10 +1,5 @@
-﻿using LeetCodeProblems.Array_Problems.Easy;
-using LeetCodeProblems.Array_Problems.Medium;
-using LeetCodeProblems.Breadth_First_Search_Problem;
-using LeetCodeProblems.Math_Problems.Easy;
-using LeetCodeProblems.Medium;
+﻿using LeetCodeProblems.Array_Problems.Medium;
 using System;
-using System.Collections.Generic;
 
 namespace LeetCodeProblems
 {
@@ -13,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Single_Number_II nameOfClass = new();
+            Letter_Combinations_of_a_Phone_Number nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -32,7 +27,7 @@ namespace LeetCodeProblems
             //            //Console.WriteLine(data.IsValid("ab", new string[] { "ad", "bd", "aaab", "baa", "badab" }));
 
             //            int[] array1 = { 1, 2, 3, 0, 0, 0 };
-            //            int[] array2 = { 2, 5, 6 };
+            //            int[] array2 = { 2, 5, 6 };++++++++++++++++++++++++++++++++++
             //            int[,] twoDimensionalArray = new int[,]
             //{
             //    { 0, 2 },
@@ -48,9 +43,9 @@ namespace LeetCodeProblems
 
             // 000, 111, 99
             // 
-            var data = new int[] {  1, 1, 0, 1, 99,99,99 };
-         var data2 = nameOfClass.SingleNumber(data);
-
+            //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
+            //var data2 = nameOfClass.SingleNumber(data);
+            var data2 = nameOfClass.LetterCombinations("234");
 
             Console.WriteLine(data2);
 
