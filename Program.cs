@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Letter_Combinations_of_a_Phone_Number nameOfClass = new();
+            Valid_Palingdrom nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -45,7 +45,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.LetterCombinations("234");
+            var data2 = nameOfClass.IsPalindrome("A man, a plan, a canal: Panama");
 
             Console.WriteLine(data2);
 
