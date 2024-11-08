@@ -17,11 +17,13 @@ namespace LeetCodeProblems
                 {
                    return (IsPalindrome(s, left+1, right)) || (IsPalindrome(s, left,right-1));
                 }
+                left++;
+                right--;
          
             }
          
 
-            return false;
+            return true;
         }
         bool IsPalindrome(string s, int start, int end)
         {
