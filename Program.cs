@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Clear_Digits nameOfClass = new();
+            Count_the_Number_of_Special_Characters_I nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -45,7 +45,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.ClearDigits("ab24");
+            var data2 = nameOfClass.NumberOfSpecialChars("aaAbcBC");
 
             Console.WriteLine(data2);
 
