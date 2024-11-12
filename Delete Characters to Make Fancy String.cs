@@ -10,30 +10,33 @@ namespace LeetCodeProblems
     {
         public string MakeFancyString(string s)
         {
-         
+            int left = 1, right = s.Length;
+            StringBuilder result = new StringBuilder();
+            result.Append(s[0]);
 
-            for(int i=0; i<s.Length; i++)
+            int count = 1;
+
+            while (left < right)
             {
-                int count = 0;
-                for(int j=i; j<s.Length; j++)
+
+                if (s[left - 1] == s[left])
                 {
-                    if (s[i]== s[j])
-                    {
-                        count++;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    count++;
                 }
-                if (count > 2)
+                else
                 {
-                    s = s.Remove(i + 2, count - 2);
-                    i += count - 2;
+                    count = 1;
                 }
 
+                if (count < 3)
+                {
+                    result.Append(s[left]);
+                }
+
+                left++;
             }
-            return s;
+
+            return result.ToString();
         }
     }
 }
