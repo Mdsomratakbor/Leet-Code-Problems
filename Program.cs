@@ -45,7 +45,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.DiStringMatch("IDID");
+            var data2 = nameOfClass.IsLongPressedName("rick", "kric");
 
             Console.WriteLine(data2);
 
