@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Long_Pressed_Name nameOfClass = new();
+            DI_String_Match nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -45,7 +45,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.IsLongPressedName("rick", "kric");
+            var data2 = nameOfClass.DiStringMatch("IDID");
 
             Console.WriteLine(data2);
 
