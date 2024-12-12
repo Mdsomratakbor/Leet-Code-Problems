@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            DI_String_Match nameOfClass = new();
+            Largest_Odd_Number_in_String nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -45,7 +45,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.IsLongPressedName("rick", "kric");
+            var data2 = nameOfClass.LargestOddNumber("52");
 
             Console.WriteLine(data2);
 
