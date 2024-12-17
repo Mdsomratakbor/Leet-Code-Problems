@@ -8,9 +8,21 @@ namespace LeetCodeProblems
 {
     internal class Make_The_String_Great
     {
-        //public string MakeGood(string s)
-        //{
+        public string MakeGood(string s)
+        {
+            Stack<char> stack = new Stack<char>();
 
-        //}
+            foreach (char c in s)
+            {
+                if(stack.Count > 0 && Math.Abs(stack.Peek() - c) == 32)
+                {
+                    stack.Pop();
+                }
+                else
+                    stack.Push(c);
+            }
+
+            return new string(stack.Reverse().ToArray());
+        }
     }
 }
