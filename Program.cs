@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Check_if_Binary_String_Has_at_Most_One_Segment_of_Ones nameOfClass = new();
+            License_Key_Formatting nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -45,7 +45,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.CheckOnesSegment("110");
+            var data2 = nameOfClass.LicenseKeyFormatting("--a-a-a-a--", 2);
 
             Console.WriteLine(data2);
 
