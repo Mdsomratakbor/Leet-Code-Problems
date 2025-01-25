@@ -8,7 +8,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            Remove_Digit_From_Number_to_Maximize_Result nameOfClass = new();
+            Sum_of_Digits_of_String_After_Convert nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -45,7 +45,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.RemoveDigit("4565", '5');
+            var data2 = nameOfClass.GetLucky("leetcode", 2);
 
             Console.WriteLine(data2);
 
