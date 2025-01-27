@@ -10,40 +10,24 @@ namespace LeetCodeProblems
     {
         public bool DetectCapitalUse(string word)
         {
-            bool output = true;
-            for(int i =0; i<word.Length; i++)
-            {
-                if (i != 0)
-                {
-                    if (char.IsLower(word[i]))
-                    {
-                        output = false;
-                    }
-                      
-                }
-                else
-                {
-                    if (i == 0)
-                    {
-                        if (char.IsUpper(word[i]))
-                        {
-                            output = true;
-                        }
-                    }
-                    else
-                    {
-                        if (char.IsUpper(word[i]))
-                        {
-                            output = true;
-                        }
-                    }
-                  
+            if (string.IsNullOrEmpty(word))
+                return false;
 
+            bool isFirstCapital = char.IsUpper(word[0]);
+            bool areAllCaps = word.Length > 1 && char.IsUpper(word[1]);
+
+            for (int i = 1; i < word.Length; i++)
+            {
+                // Check consistency based on the case of the first two letters
+                if ((areAllCaps && !char.IsUpper(word[i])) ||
+                    (!areAllCaps && char.IsUpper(word[i])))
+                {
+                    return false;
                 }
-                
-               
             }
-            return output;
+
+            return true;
         }
+
     }
 }
