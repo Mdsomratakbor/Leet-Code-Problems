@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCodeProblems{
 
-    public class MaximumOddBinaryNumber
+    public class Maximum_OddBinary_Number
     {
            public string MaximumOddBinaryNumber(string s) {
 
