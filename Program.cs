@@ -1,4 +1,5 @@
 ﻿using LeetCodeProblems.Array_Problems.Medium;
+using LeetCodeProblems.Medium;
 using System;
 
 namespace LeetCodeProblems
@@ -8,7 +9,7 @@ namespace LeetCodeProblems
         static void Main(string[] args)
         {
 
-            DetectCapital nameOfClass = new();
+            Zigzag_Conversion nameOfClass = new();
 
             //            TreeNode root = new TreeNode(2);
             //            root.right = new TreeNode(3);
@@ -45,7 +46,7 @@ namespace LeetCodeProblems
             // 
             //   var data = new int[] {  1, 1, 0, 1, 99,99,99 };
             //var data2 = nameOfClass.SingleNumber(data);
-            var data2 = nameOfClass.DetectCapitalUse("ffffffffffffffffffffF");
+            var data2 = nameOfClass.Convert("AB", 1);
 
             Console.WriteLine(data2);
 
